@@ -38,11 +38,7 @@ header .logo{
 }
 
 span{
-    background: $color-bg;
-    -webkit-background-clip: text;  // For WebKit-based browsers like Safari
-    -moz-background-clip: text;     // For Firefox (older versions)
-    background-clip: text;
-    color: transparent;
+    @include spanAndNavListStyle;
 }
 
 ul.navlist{
@@ -51,4 +47,20 @@ ul.navlist{
 
 .navlist li{
     margin: 0 16px;
+}
+
+.navlist li a{
+    @include navlistStyle;
+}
+
+.navlist li a:hover, .navlist li a.active{
+    @include spanAndNavListStyle;
+}
+
+.right-header{
+    @include rightHeader;
+}
+
+.btn{
+    @include btnAll;
 }

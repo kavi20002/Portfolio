@@ -3,9 +3,11 @@
 $font-family :  "Poppins", serif;
 $bg-color:#dfe4ea;
 $white-bg:linear-gradient(0deg, #ffffff 0%, #edf4fa 51%, #e5eef7 100%);
-$color-bg:linear-gradient(180deg, rgba(255, 71, 87,1.0) 0%, rgba(190, 46, 221,1.0) 51%, rgba(72, 52, 212,1.0) 100%);
+$color-bg:linear-gradient(180deg, rgba(247, 143, 179,1.0) 0%, rgba(190, 46, 221,1.0) 51%, rgba(104, 109, 224,1.0) 100%);
 $main-color:#e6006d;
 $font-color:#95afc0;
 $hover-box-shadow:rgba(0,0,0,0.19) 0px 10px 20px, rgba(0,0,0,0.23) 0px 6px 6px;
 $white-bg-2:linear-gradient(180deg, #e5eef7 0%, #fff 100%);
 $logo-font-size: 27px;
+$display: flex;
+$align-items:center;

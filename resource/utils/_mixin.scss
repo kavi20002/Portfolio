@@ -1,7 +1,8 @@
+@import './variables';
+
+
 @mixin headerContext(
-    $display:flex,
     $justify-content:space-between,
-    $align-items:center
 ){
     display: $display;
     align-items: $align-items;
@@ -14,4 +15,49 @@
 ){
     font-size: $size;
     font-weight: $font-weight;
+}
+
+@mixin spanAndNavListStyle(
+    $background: $color-bg,
+    $color: transparent,
+    $text: text
+){
+    background: $background;
+    -webkit-background-clip: $text;  // For WebKit-based browsers like Safari
+    -moz-background-clip: $text;     // For Firefox (older versions)
+    background-clip: $text;
+    color: $color;
+}
+
+@mixin navlistStyle(
+    $dispay-nav: inline-flex,
+    $font-weight-nav: 600
+){
+    display: $dispay-nav;
+    font-weight: $font-weight-nav;
+}
+
+@mixin rightHeader(
+    $justify-content:end,
+    $grid-gap:13px
+){
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    grid-gap: $grid-gap;
+}
+
+@mixin btnAll(
+    $color-btn:#fff,
+    $btn-padding: 8px 10px,
+    $border-radius-btn: 5px,
+    $btn-font-weight: 500,
+    $transition: all .3s ease
+){
+    background: $color-bg;
+    color: $color-btn;
+    padding: $btn-padding;
+    border-radius: $border-radius-btn;
+    font-weight: $btn-font-weight;
+    transition: $transition;
 }
