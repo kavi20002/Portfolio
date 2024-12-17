@@ -203,6 +203,103 @@ section{
 }
 
 .social-media a{
-    
+    width: 42px;
+    height: 42px;
+    font-size: 1.5rem;
+    color: $main-color;
+    background: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.social-media a:hover{
+    background: $color-bg;
+    color: #fff;
+}
+
+.bg-icon{
+    position: relative;
+    display: $display;
+    justify-content: center;
+    align-items: $align-items;
+}
+
+.bg-icon span{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: $color-bg;
+    border-radius: 50%;
+    display: $display;
+    align-items: $align-items;
+    justify-content: center;
+    animation: animate 1s linear infinite;
+}
+
+.img-hero{
+    position: relative;
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.img-hero img{
+    position: relative;
+    width: 400px;
+    height: auto;
+    margin-top: -8rem;
+    z-index: 10;
+}
+
+.rotate-text{
+    position: absolute;
+    top: 4%;
+    left: -53px;
+    display: $display;
+    justify-content: center;
+    align-items: $align-items;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+.rotate-text span{
+    position: relative;
+    width: 442px;
+    height: 442px;
+    background: red;
+    border: 6px solid #eaeef0;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.rotate-text span::before{
+    content: "";
+    position: absolute;
+    inset: 20px;
+    background: #00aaff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.rotate-text span i{
+    position: absolute;
+    inset: 0;
+    background: $color-bg;
+    filter: blur(5px);
+    animation: animate 2s linear infinite;
+}
+
+.rotate-text .text{
+    position: absolute;
+    width: 490px;
+    height: 490px;
+    background: #f2f6fb;
+    border-radius: 50%;
+    box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0);
+    animation: rotateText 30s linear infinite;
 }
 /*home section css*/
