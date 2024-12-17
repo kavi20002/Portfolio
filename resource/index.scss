@@ -42,7 +42,7 @@ span{
 }
 
 ul.navlist{
-    display: flex;
+    display: $display;
 }
 
 .navlist li{
@@ -131,5 +131,78 @@ section{
 .text-animate{
     width: 22.8rem;
     position: relative;
+}
+
+.text-animate h2{
+    @include spanAndNavListStyle;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    -webkit-text-stroke: 0.1vw #B33771;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transition: .6s;
+    letter-spacing: 1px;
+    animation: moveText 3s linear infinite;
+    animation-delay: 2s;
+
+}
+
+.text-animate h2::before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -3px;
+    width: 0;
+    height: 70%;
+    border-right:2px solid $main-color;
+    animation: moveCursorText 3s linear infinite;
+    animation-delay: 2s;
+}
+
+.hero-info p{
+    font-size: .9rem;
+    color: $font-color;
+    line-height: 1.5rem;
+}
+
+.btn-box{
+    display: $display;
+    justify-content: $justify-content;
+    width: 320px;
+    margin-top:2rem;
+    margin-bottom: 6rem;
+
+}
+
+.btn-box .btn{
+    padding: 10px;
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+    gap: 8px;
+}
+
+.btn-box .d-CV{
+    background: $white-bg-2;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #000;
+    box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0px,
+                 rgba(60,64,67,0.15)0px 2px 6px 2px;
+    transition: all .3s ease;
+
+}
+
+.social-media{
+    display: $display;
+    justify-content: $justify-content;
+    width: 220px;
+    height: 45px;
+}
+
+.social-media a{
+    
 }
 /*home section css*/

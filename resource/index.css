@@ -156,4 +156,73 @@ section {
   position: relative;
 }
 
+.text-animate h2 {
+  background: linear-gradient(180deg, rgb(234, 134, 133) 0%, rgb(136, 84, 208) 51%, rgb(75, 123, 236) 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  -webkit-text-stroke: 0.1vw #B33771;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transition: 0.6s;
+  letter-spacing: 1px;
+  animation: moveText 3s linear infinite;
+  animation-delay: 2s;
+}
+
+.text-animate h2::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -3px;
+  width: 0;
+  height: 70%;
+  border-right: 2px solid #eb3b5a;
+  animation: moveCursorText 3s linear infinite;
+  animation-delay: 2s;
+}
+
+.hero-info p {
+  font-size: 0.9rem;
+  color: #95afc0;
+  line-height: 1.5rem;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+
+.btn-box .btn {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.btn-box .d-CV {
+  background: linear-gradient(180deg, #e5eef7 0%, #fff 100%);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #000;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: all 0.3s ease;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  height: 45px;
+}
+
 /*home section css*//*# sourceMappingURL=index.css.map */

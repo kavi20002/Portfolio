@@ -1,9 +1,7 @@
 @import './variables';
 
 
-@mixin headerContext(
-    $justify-content:space-between,
-){
+@mixin headerContext{
     display: $display;
     align-items: $align-items;
     justify-content: $justify-content;
@@ -38,12 +36,12 @@
 }
 
 @mixin rightHeader(
-    $justify-content:end,
+    $justify-content-r:end,
     $grid-gap:13px
 ){
     display: $display;
     align-items: $align-items;
-    justify-content: $justify-content;
+    justify-content: $justify-content-r;
     grid-gap: $grid-gap;
 }
 
