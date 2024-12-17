@@ -1,0 +1,9 @@
+@mixin headerContext(
+    $display:flex,
+    $justify-content:space-between,
+    $align-items:center
+){
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
