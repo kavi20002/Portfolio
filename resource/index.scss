@@ -29,7 +29,26 @@ header{
     left: 0;
     background: $white-bg;
     z-index: 100;
+    transition: .3s;
     @include headerContext;
 }
     
+header .logo{
+    @include logoStyle;
+}
 
+span{
+    background: $color-bg;
+    -webkit-background-clip: text;  // For WebKit-based browsers like Safari
+    -moz-background-clip: text;     // For Firefox (older versions)
+    background-clip: text;
+    color: transparent;
+}
+
+ul.navlist{
+    display: flex;
+}
+
+.navlist li{
+    margin: 0 16px;
+}
