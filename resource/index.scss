@@ -270,7 +270,7 @@ section{
     width: 442px;
     height: 442px;
     background: red;
-    border: 6px solid #eaeef0;
+    border: 6px solid #e7eff3;
     border-radius: 50%;
     z-index: 1;
     overflow: hidden;
@@ -297,9 +297,18 @@ section{
     position: absolute;
     width: 490px;
     height: 490px;
-    background: #f2f6fb;
+    background: #e3e6eb;
     border-radius: 50%;
     box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0);
     animation: rotateText 30s linear infinite;
+}
+
+.text b{
+    position: absolute;
+    transform-origin: 0 247px;
+    display: block;
+    top: 0;
+    left: 50%;
+    font-size: 1.2rem;
 }
 /*home section css*/
