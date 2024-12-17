@@ -61,3 +61,18 @@
     font-weight: $btn-font-weight;
     transition: $transition;
 }
+
+@mixin homeStyle(
+    $home-h: 100%,
+    $width-h:100%,
+    $grid-coloumn: repeat(2,1fr),
+    $grid-gap-h:64px
+){
+    height: $home-h;
+    width: $width-h;
+    display: $display;
+    grid-template-columns: $grid-coloumn;
+    align-items: $align-items;
+    grid-gap: $grid-gap-h;
+    background: $white-bg-2;
+}
