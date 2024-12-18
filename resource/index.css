@@ -470,4 +470,100 @@ section {
   text-align: center;
 }
 
+.icon-service {
+  display: inline-flex;
+  position: relative;
+}
+
+.icon-service i {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgb(234, 134, 133) 0%, rgb(136, 84, 208) 51%, rgb(75, 123, 236) 100%);
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  font-size: 2.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.service-item:hover i {
+  outline: 1px solid #eb3b5a;
+  transform: scale(1.2);
+}
+
+.icon-service span {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: -5px;
+  top: -5px;
+  background: linear-gradient(180deg, rgb(234, 134, 133) 0%, rgb(136, 84, 208) 51%, rgb(75, 123, 236) 100%);
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
+
+.service-item h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.service-item p {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #95afc0;
+}
+
+.read-more {
+  background: linear-gradient(180deg, #e5eef7 0%, #fff 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  margin-right: 0.8rem;
+  cursor: pointer;
+}
+
+.proposal {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: linear-gradient(180deg, #e5eef7 0%, #fff 100%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  margin-top: 6rem;
+  border-radius: 10px;
+  padding: 0rem 2rem;
+  z-index: 1;
+}
+
+.proposal img {
+  width: 40vw;
+  height: auto;
+  margin: -4rem 0 0;
+  z-index: 2;
+}
+
+.services .text-box span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.services .text-box h3 {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.services .text-box .btn {
+  padding: 10px 20px;
+}
+
 /*service section css*//*# sourceMappingURL=index.css.map */
