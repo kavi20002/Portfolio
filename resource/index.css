@@ -13,6 +13,10 @@ a {
   color: #000;
 }
 
+.outer {
+  border: 1px solid red;
+}
+
 body {
   font-family: "Poppins", serif;
   background-color: #e3edf7;
@@ -429,4 +433,41 @@ section {
 
 /*about section css*/
 /*service section css*/
+.services {
+  position: relative;
+}
+
+.main-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-text .heading {
+  color: #eb3b5a;
+}
+
+.main-text span {
+  color: #95afc0;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.all-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.service-item {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #e5eef7 0%, #fff 100%);
+  text-align: center;
+}
+
 /*service section css*//*# sourceMappingURL=index.css.map */
