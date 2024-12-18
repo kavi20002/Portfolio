@@ -381,6 +381,28 @@ section{
     cursor: pointer;
     transition: all .3s ease;
 }
+.about-btn button.active{
+    background: $color-bg;
+    color: #fff;
+}
 
+.text-box{
+    margin: .8rem 0;
+}
 
+.content-btn > .content:not(:first-child){
+    display: none;
+}
+
+.about-btn button:hover{
+    box-shadow: $hover-box-shadow;
+}
+
+.CV-content{
+    margin-top: 1.5rem;
+}
 /*about section css*/
+
+/*service section css*/
+.ser
+/*service section css*/
