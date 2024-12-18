@@ -326,7 +326,7 @@ section {
   animation: rotateText 30s linear infinite;
 }
 
-.text b {
+.text p {
   position: absolute;
   transform-origin: 0 247px;
   display: block;
@@ -335,4 +335,75 @@ section {
   font-size: 1.2rem;
 }
 
-/*home section css*//*# sourceMappingURL=index.css.map */
+/*home section css*/
+/*about section css*/
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.about .about-img {
+  position: relative;
+}
+
+.about .about-img .about-hero {
+  width: 40vw;
+  height: auto;
+}
+
+.about-img .ring {
+  position: absolute;
+  top: 22%;
+  right: 1%;
+}
+
+.about-img .circle {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.about-content {
+  padding: 2rem 0;
+}
+
+.about-content h2 {
+  color: #eb3b5a;
+}
+
+.about-content h3 {
+  font-size: 2.1rem;
+  line-height: 2rem;
+  margin: 5rem 0;
+}
+
+.about-content p {
+  color: #95afc0;
+}
+
+.text-box p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.about-btn {
+  margin: 2rem 0;
+}
+
+.about-btn button, .CV-content a {
+  background: linear-gradient(180deg, #e5eef7 0%, #fff 100%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/*about section css*//*# sourceMappingURL=index.css.map */
