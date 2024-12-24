@@ -824,4 +824,79 @@ footer{
                 rgba(0,0,0,0.3)0px 30px 60px -30px,
                   rgba(10,37,64,0.35)0px -2px 6px 0px inset;
 }
+
+#progress-value{
+    display: grid;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    background: $color-bg;
+    border-radius: 50%;
+    color: #fff;
+    place-items: center;
+    font-size: 25px;
+}
 /*footer section css*/
+
+@keyframes moveText{
+    0%, 10%, 100%{
+        background-position: -24rem 0;
+    }
+
+    65%, 85%{
+        background-position: 0rem 0;
+    }
+}
+
+@keyframes  moveCursorText{
+    0%, 10%, 100%{
+        width: 0;
+    }
+
+    65%,78%,85%{
+        width: 100%;
+        opacity: 1;
+    }
+
+    75%,85%{
+        opacity: 0;
+    }
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateText{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes progress{
+    to{
+        stroke-dashoffset: var(--target);
+    }
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-22px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
