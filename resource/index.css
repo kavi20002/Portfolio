@@ -665,4 +665,40 @@ section {
   width: 100%;
 }
 
+.contact-info input,
+.contact-info form textarea {
+  padding: 0.8rem;
+  border: 2px solid #e8e1e1;
+  margin: 0.5rem 0;
+  background: #e8f1f9;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.contact-info form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box input {
+  width: 49%;
+}
+
+form input:focus, form textarea:focus {
+  filter: brightness(100%);
+  background: #d2e9ff;
+  border: 2px solid #f8caca;
+}
+
+form textarea {
+  resize: none;
+}
+
+form .btn {
+  padding: 15px 2px;
+  cursor: pointer;
+  border: none;
+}
+
 /*contact section css*//*# sourceMappingURL=index.css.map */
