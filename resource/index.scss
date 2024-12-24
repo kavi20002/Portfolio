@@ -609,3 +609,53 @@ section{
     background: $color-bg;
     color: #fff;
 }
+
+.portfolio-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px,1fr));
+    gap: 1rem;
+}
+
+.portfolio-img img{
+    display: block;
+    width: 100%;
+    height: 160px;
+    transition: .3s;
+}
+
+.portfolio-box{
+    @include headerContext;
+    gap: .5rem;
+    padding: .5rem;
+    box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
+    background: $white-bg-2;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+
+.portfolio-content{
+    width: 100%;
+    padding-left:.5rem ;
+    padding-bottom: .5rem;
+}
+
+.portfolio-img{
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+.portfolio-content a.read-more{
+    padding: 8px 12px;
+    font-size: .8rem;
+}
+
+.portfolio-content p{
+    font-size: .9rem;
+    color: $font-color;
+    margin: .5rem 0 1rem 0;
+}

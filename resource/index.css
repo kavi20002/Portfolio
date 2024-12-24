@@ -589,4 +589,56 @@ section {
 .fillter-buttons button:hover, button.mixitup-control-active {
   background: linear-gradient(180deg, rgb(234, 134, 133) 0%, rgb(136, 84, 208) 51%, rgb(75, 123, 236) 100%);
   color: #fff;
+}
+
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  gap: 1rem;
+}
+
+.portfolio-img img {
+  display: block;
+  width: 100%;
+  height: 160px;
+  transition: 0.3s;
+}
+
+.portfolio-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+  background: linear-gradient(180deg, #e5eef7 0%, #fff 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-content {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.portfolio-img {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.portfolio-box:hover img {
+  transform: scale(1.1);
+}
+
+.portfolio-content a.read-more {
+  padding: 8px 12px;
+  font-size: 0.8rem;
+}
+
+.portfolio-content p {
+  font-size: 0.9rem;
+  color: #95afc0;
+  margin: 0.5rem 0 1rem 0;
 }/*# sourceMappingURL=index.css.map */
