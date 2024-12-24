@@ -718,4 +718,28 @@ form .btn{
     cursor: pointer;
     border: none;
 }
+
+.skill-box{
+    padding: 0 1rem 1rem;
+}
+
+.skill-box .main-text{
+    margin-bottom: 1rem;
+}
+
+.skill-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,auto));
+    justify-content: center;
+    grid-gap: 2.5rem;
+}
+
+.skill{
+    display: $display;
+    flex-direction: column;
+    align-items: $align-items;
+    justify-content: center;
+}
+
+
 /*contact section css*/
