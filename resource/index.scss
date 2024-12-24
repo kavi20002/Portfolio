@@ -585,6 +585,7 @@ section{
 
 /*service section css*/
 
+/*portfolio section css*/
 .fillter-buttons{
     text-align: center;
     padding: .5rem;
@@ -659,3 +660,25 @@ section{
     color: $font-color;
     margin: .5rem 0 1rem 0;
 }
+/*portfolio section css*/
+
+/*contact section css*/
+.contact-skills{
+    display: $display;
+    justify-content: $justify-content;
+    gap: 2rem;
+}
+
+.contact-info, .skills{
+    width: 100%;
+    background: $white-bg-2;
+    box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.contact-info input,
+.contact-info form textarea{
+    width: 100%;
+}
+/*contact section css*/
