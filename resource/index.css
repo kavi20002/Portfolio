@@ -770,4 +770,37 @@ form .btn {
   font-weight: 400;
 }
 
-/*contact section css*//*# sourceMappingURL=index.css.map */
+h2.counter span {
+  font-size: 1.7rem;
+}
+
+.sk-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/*contact section css*/
+/*footer section css*/
+footer {
+  text-align: center;
+  margin: 0 8%;
+  padding: 2rem 0;
+  border-top: 2px solid #e8e1e1;
+}
+
+#progress {
+  position: fixed;
+  z-index: 1000;
+  bottom: 60px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  color: #1d002c;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+/*footer section css*//*# sourceMappingURL=index.css.map */
