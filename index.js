@@ -1,3 +1,4 @@
+// active hamburger menu
 let menuIcon = document.querySelector(".menu-icon");
 let navlist = document.querySelector(".navlist")
 menuIcon.addEventListener("click", ()=>{
@@ -6,18 +7,21 @@ menuIcon.addEventListener("click", ()=>{
     document.body.classList.toggle("open");
 });
 
+//remove navlist
 navlist.addEventListener("click", ()=>{
     navlist.classList.remove("active");
     menuIcon.classList.remove("active");
     document.body.classList.remove("open");
 });
 
+//rotate text js code
 let text = document.querySelector(".text p");
 
 text.innerHTML = text.innerHTML.split("").map((char,i)=>{
     `<b style="transform:rotate(${i * 6.3}deg)">${char}</b>`
 }).join("");
 
+//switch between about buttons
 const buttons = document.querySelectorAll(".about-btn button");
 const contents = document.querySelectorAll(".content");
 
@@ -29,6 +33,8 @@ buttons.forEach((button,index) => {
         button.classList.add('active');
     });
 });
+
+//portfolio filter
 
 var mixer = mixitup('.portfolio-gallery',{
     selectors:{
@@ -62,6 +68,7 @@ var swiper = new Swiper("mySwiper", {
     }
 });
 
+//skill  progress bar
 const first_skill = document.querySelector(".skill:first-child");
 const sk_couters = document.querySelectorAll(".counter span");
 const progress_bars = document.querySelectorAll(".skills svg circle");
@@ -107,3 +114,64 @@ function skillsCounter(){
 
     progress_bars.forEach(p => p.style.animation = "progress 2s ease-in-out forwards");
 }
+
+//side progress bar
+let calcScrollValue = ()=>{
+    let scrollProgress  = document.getElementById("progress");
+    let pos = document.documentElement.scrollTop;
+
+    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 100)/ calcHeight);
+
+    if(pos > 100){
+        scrollProgress.style.display = "grid";
+    }else{
+        scrollProgress.style.display = "none";
+    }
+
+    scrollProgress.addEventListener("click", ()=>{
+        document.documentElement.scrollTop = 0 ;
+    });
+
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%, #e6006d ${scrollValue}%)`;
+}
+
+window.onscroll = calcScrollValue;
+window.onload =  calcScrollValue;
+
+//active menu
+let menuList = document.querySelectorAll("header ul li a");
+let section = document.querySelectorAll("section");
+
+function activeMenu(){
+    let len = section.length;
+    while(--len && window.scrollY + 97 < section[len].offsetTop){}
+    menuList.forEach(sec => sec.classList.remove("active"));
+    menuList[len].classList.add("active");
+}
+
+activeMenu();
+window.addEventListener("scroll", activeMenu);
+
+//scroll reveal
+
+ScrollReveal({
+    distance: "90px",
+    duration:2000,
+    delay: 200,
+    // reset: true
+});
+
+ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', {
+    origin:"top"
+});
+ScrollReveal().reveal('.about-img,.fillter-buttons,.contact-info', {
+    origin:"left"
+});
+ScrollReveal().reveal('.about-content,.skills', {
+    origin:"right"
+});
+ScrollReveal().reveal('.all-services,.portfolio-gallery,.footer,.img-hero', {
+    origin:"bottom"
+});
+
