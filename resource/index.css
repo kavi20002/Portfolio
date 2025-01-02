@@ -357,18 +357,6 @@ section {
   height: auto;
 }
 
-.about-img .ring {
-  position: absolute;
-  top: 22%;
-  right: 1%;
-}
-
-.about-img .circle {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-}
-
 .about-content {
   padding: 2rem 0;
 }
