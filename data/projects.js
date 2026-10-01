@@ -145,6 +145,29 @@ export const projects = [
     },
     demo: "https://movie-explorer-theta-murex.vercel.app",
     featured: true
+  },
+  {
+    id: "petty-cash-management-system",
+    title: "Petty Cash Management System",
+    category: "web",
+    type: "professional",
+    shortDescription:
+      "A petty cash management component implemented within Tokyo Cement's existing Farmers Management System to support claim, reimbursement, and IOU processes.",
+    description:
+      "Implemented a Petty Cash component within Tokyo Cement's existing Farmers Management System to support claim, reimbursement, and IOU processes. The module was developed as part of the internship using the MERN stack and integrated into the existing system rather than being built as a standalone application.",
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js"
+    ],
+    image: "",
+    repository: {
+      platform: "",
+      url: ""
+    },
+    demo: "",
+    featured: false
   }
 ];
 
