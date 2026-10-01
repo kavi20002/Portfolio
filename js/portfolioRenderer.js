@@ -99,7 +99,7 @@ function createProjectCard(project) {
     demoLink.textContent = "Live Demo";
     demoLink.setAttribute(
       "aria-label",
-      `View live demo for ${project.title || "Movie Explorer"}`
+      `View live demo for ${project.title || "project"}`
     );
     actions.appendChild(demoLink);
   }
@@ -119,7 +119,7 @@ function createProjectCard(project) {
     repoLink.textContent = platformLabel || "Code";
     repoLink.setAttribute(
       "aria-label",
-      `View ${platformLabel || "code"} repository for ${project.title || "Movie Explorer"}`
+      `View ${platformLabel || "code"} repository for ${project.title || "project"}`
     );
     actions.appendChild(repoLink);
   }
