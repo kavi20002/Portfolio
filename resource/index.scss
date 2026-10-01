@@ -608,6 +608,20 @@ section{
     color: $font-color;
     margin: .5rem 0 1rem 0;
 }
+
+.portfolio-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.portfolio-empty{
+    grid-column: 1 / -1;
+    text-align: center;
+    color: $font-color;
+    font-size: 1.1rem;
+    padding: 2rem 1rem;
+}
 /*portfolio section css*/
 
 /*contact section css*/

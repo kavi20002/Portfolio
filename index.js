@@ -1,3 +1,6 @@
+import { projects } from "./data/projects.js";
+import { renderPortfolio } from "./js/portfolioRenderer.js";
+
 // Hamburger menu
 const menuIcon = document.querySelector(".menu-icon");
 const navlist = document.querySelector(".navlist");
@@ -33,11 +36,15 @@ buttons.forEach((button, index) => {
     });
 });
 
-// Portfolio filter
-mixitup(".portfolio-gallery", {
-    selectors: { target: ".portfolio-box" },
-    animation: { duration: 500 },
-});
+// Portfolio filter & dynamic rendering
+const gallery = document.querySelector(".portfolio-gallery");
+if (gallery) {
+    renderPortfolio(projects, gallery);
+    mixitup(gallery, {
+        selectors: { target: ".portfolio-box" },
+        animation: { duration: 500 },
+    });
+}
 
 // Swiper
 new Swiper(".mySwiper", {

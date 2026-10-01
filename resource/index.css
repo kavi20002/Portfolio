@@ -632,6 +632,20 @@ section {
   margin: 0.5rem 0 1rem 0;
 }
 
+.portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.portfolio-empty {
+  grid-column: 1/-1;
+  text-align: center;
+  color: #95afc0;
+  font-size: 1.1rem;
+  padding: 2rem 1rem;
+}
+
 /*portfolio section css*/
 /*contact section css*/
 .contact-skills {
@@ -939,4 +953,6 @@ footer {
     padding: 10px;
     font-size: 0.8rem;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+/*# sourceMappingURL=index.css.map */
